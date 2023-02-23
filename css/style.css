@@ -58,3 +58,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #3d3b47;
 }
+
+@media(max-width: 500px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
