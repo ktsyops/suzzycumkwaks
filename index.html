@@ -2,26 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>survey-form</title>
     <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id = "title">Suzzy's survey-form</h1>
+    <p id = "description">Feel free </p>
+    <form  id = "survey-form">
+    <label id = "name-label">
+      Name:
+    </label>
+    <input type = "text" placeholder ="name" id = "name" required>
 
-    <!--
+     <label id ="email-label">
+      Email:
+    </lable>
+    <input type = "email" placeholder = "email" id = "email" required>
 
-    Hello Camper!
+  <label id ="number-label">
+      Number:
+    </lable>
+    <input type = "number" placeholder ="number" id = "number" min = "0" max= "100">
+    <br>
+<label>sex</label>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+<select name="sex" id="dropdown">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  </select>
+  <p> Are you a student?</p>
+  <input type="radio"  name="student" value="No">
+<label for="No">No</label><br>
+<input type="radio" id="Yes" name="student" value="Yes">
+<label for="Yes">Yes</label><br>
+<p>Please select</p>
 
-    - The freeCodeCamp Team
+<input type="checkbox" id="vehicle1" name="start 1" value="student">
+<label>I am a student</label><br>
+<input type="checkbox" id="start 2" name="student2" value="student">
+<label> I have a full-time job</label><br>
+<input type="checkbox" id="start3" name="student" value="student">
+<label>I am a part-time student</label><br>
 
-    -->
-    <p>Hello World, we are software developers!</p>
-    <script  src="js/index.js"></script>
+<label for="w3review">Add additional comments:</label>
+
+<textarea id="comments" name="comments" rows="4" cols="50">
+Add anything you would like
+</textarea>
+
+<input type = "submit" id ="submit" value = "submit"/>
+    </form>
+
   </body>
 </html>
